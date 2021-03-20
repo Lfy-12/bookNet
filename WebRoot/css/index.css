@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+ol,ul{
+    list-style-type: none;
+}
+
+a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.left{
+    float:left;
+}
+.right{
+    float: right;
+}
+
+/* #top样式 */
+#top{
+    height: 30px;
+    background-color: #FFF5E6;
+    border-top: 1px solid #FFD080;
+    border-bottom: 1px solid #FFD080;
+    padding: 0 9%;
+}
+#top li{
+    float:left;
+    line-height: 30px ;
+}
+
+#top a{
+    font-size: 14px;
+    color: #4D3C00;
+    border-right: 1px solid #4D3C00;
+    padding: 0px 10px;
+}
+
+#top a:hover{
+    color: #FF5300;
+}
+
+/* hearder样式 */
+#header{
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+}
+
+/* 小站样式 */
+.zuo{
+    width: 25%;
+    height: 140px;
+    float: left;
+    position: relative;
+}
+.zuo img{
+    width: 200px;
+    height:100px;
+    margin-left:15%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px; /* 高度的一半 */
+    margin-left: -100px;
+}
+
+/* 搜索框样式 */
+.mid{
+    float: left;
+    padding: 50px 0px 0px;
+}
+.mid form input{
+    font-size: 15px;
+    box-sizing: border-box;
+}
+.mid form input[type="text"]{
+    background: rgb(255, 243, 195);
+    width: 350px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+}
+
+.mid form input[type="submit"]{
+    font-size: 17px;
+    letter-spacing: 10px;
+    font-family: serif;
+    position:relative;
+    left: -5px;
+    border-radius: 0 25px 25px 0;
+    width:100px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background:#fccc5d;
+    color: #fff;
+}
+
+.mid form input[type="submit"]:hover{
+    background: #FFD780	;
+    transition: 0.2s;
+}
+
+.mid div a{
+    padding:5px 20px ;
+    font-size: 13px;
+    color: grey;
+}
+
+/* you样式 */
+.you{
+    float: left;
+    padding: 50px 150px;
+}
+
+
+.you input{
+    font-size: 15px;
+    box-sizing: border-box;
+}
+.you .box{
+    background-color: #FF9640;
+    width: 105px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color:#fff; 
+}
+
+.you .box:hover{
+    border: 1.5px solid #FF9640;
+    background:#fff;
+    color:#FF9640;
+    border-right: none ;
+    font-weight: bold;
+    cursor: pointer;
+}
+.you .box2{
+    position:relative;
+    left: -5px;
+    width:100px;
+    height: 40px;
+    border: 1.5px solid #FF9640;
+    outline: none;
+    cursor: pointer;
+    background:#fff;
+    color: #FF9640;
+}
+
+.you .box2:hover{
+   color: red;
+}
+
+/* 书目导航 */
+.white{
+    height: 10px;
+    width: 100%;
+}
+
+.zhubian {
+    width: 1250px;
+    height: 45px;
+    margin-left: 6%;
+}
+
+.item{
+    width: 83px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: black;
+    margin-right: 20px;
+}
+
+.beu{
+    width: 83px;
+    height: 32px;
+    border: none;
+    outline: none;
+    padding: 0px;
+    background-color: burlywood;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.zhubian-bottom {
+    border: 1.2px solid burlywood;
+}
+
+/* 折叠书样式.轮播*/
+.zhu{
+    height: 510px;
+    width: 1300px;
+    margin-left:6% ;
+    display: inline-block;
+}
+.lunbo{
+    height: 470px;
+    width: 50px;
+    float: left;
+}
+.lunbo button{
+    width: 28px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: #FFD880;
+    color:#fff;
+    font-size: 35px;
+    margin-top: 210px;
+}
+.lunbo button:hover{
+    background-color: #ffe4a3;
+    cursor: pointer;
+}
+.b2{
+    height: 510px;
+    width: 1200px;
+    overflow: hidden; 
+    position: relative;
+    float: left;
+}
+.b1{
+    height: 510px;
+    width: 4000px;
+    position: relative;
+}
+.shuzi button{
+    float: left;
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 26px;
+    margin-top:20px;
+    border-radius: 100%;
+    background-color: burlywood;
+}
+/* 折叠书样式. 翻书*/
+.cardlist{
+    height: 510px;
+    width: 1180px;
+    position: relative;
+    margin: 0;
+    float: left;
+}
+
+.card-box{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    float: left;
+    transition: width 1s ease;
+    
+}
+.card-box:hover{
+    width: 420px;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    background-color: #e3d9c6;
+    position: absolute;
+    transition: all 1s ease;
+}
+
+.card-outside,.card-inside{
+    position: absolute;
+    right: 0;
+    width: 200px;
+    height: 200px;
+}
+
+.card-outside{
+    z-index: 100;
+    perspective: 1000px;
+}
+
+.card-outside-container{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform-origin: left;
+    transition: all 1s ease;
+}
+
+.card:hover .card-outside-container{
+    transform: rotateY(-180deg);
+}
+
+.card:hover{
+    width:400px;
+}
+
+.card:hover .btn{
+    opacity: 100;
+}
+ 
+.card-front,.card-back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-color:  #e3d9c6;
+}
+
+.card-front-top{
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(to bottom,#ff73b9,#ff40a1);
+    clip-path: polygon(0 0,100% 0,100% 90%,57% 90%,50% 100%,43% 90%,0 90%);
+}
+
+.card-front-top img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-front-bot{
+    font-size: 22px;
+    color: #ff40a1;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card-back{
+    transform: rotateY(180deg);
+}
+
+.video-container{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(0 0,100% 0,90% 50%,100% 100%,0 100%);
+}
+.video-container img{
+    height: 200px;
+    width: 200px;
+}
+
+.card-inside{
+    z-index: 99;
+    
+}
+
+.card-inside-container{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    color: #ff40a1;
+    font-weight: 500;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-inside-container p{
+    margin-bottom: 40px;
+    color: #333;
+    font-size: 13px;
+    font-weight: normal;
+}
+.btn{
+    position: absolute;
+    z-index: 101;
+    right: 40px;
+    bottom: 10px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border: 3px solid #ff40a1;
+    color: #e3d9c6;
+    border-radius: 5px;
+    background-color:#ff40a1;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.btn:hover{
+    background-color: #e3d9c6;
+    color: #ff40a1;
+}
+.btn .gwc{
+    color: #ff40a1;
+    display: none;
+    font-weight: bold;
+}
+.btn .jg {
+    font-size: 20px;
+}
+.btn:hover .jg{
+    display: none;
+}
+.btn:hover .gwc{
+    display: block;
+}
